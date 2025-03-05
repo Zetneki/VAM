@@ -1,0 +1,60 @@
+
+.bg-image {
+    background-image: url('../img/gochava\ featured.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    z-index: 0;
+}
+
+
+.card {
+    border-radius: 15px;
+    background-color: #272626; 
+    box-shadow: 0px 0px 20px rgb(71, 68, 68);
+}
+
+.card-body h2,
+.card-body label,
+.card-body p,
+.card-body a {
+    color: white; 
+}
+
+.custom-input {
+    background-color: rgb(64, 65, 65) !important; 
+    color: white !important; 
+    border: none; 
+}
+
+.card-body a {
+    color: white;
+}
+
+.btn {
+    background-color: #28a745; 
+    color: white; 
+}
+
+.upper {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+#error {
+    color: rgb(160, 20, 20);
+}

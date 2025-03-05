@@ -1,0 +1,83 @@
+body {
+  background-image: url(../img/background3_enhanced.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cell {
+  border-right: 1px rgb(222, 226, 230) solid;
+}
+
+.cell,
+.cellr {
+  text-align: center;
+}
+
+.filter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.dpdown {
+  color: rgb(34, 47, 62) !important;
+}
+
+.form-control {
+  background-color: rgb(195, 201, 204);
+}
+
+.dropdown-menu {
+  background-color: rgb(195, 201, 204);
+}
+
+.dropdown-item {
+  color: rgb(34, 47, 62);
+}
+
+.dropdown-item:hover {
+  background-color: rgb(255, 159, 67);
+  color: rgb(34, 47, 62) !important;
+}
+
+.card-title {
+  color: white;
+}
+
+.cont {
+  opacity: 0.9;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.value {
+  width: 50px;
+}
+
+/* Állítsd be a nyilak stílusát */
+input[type="number"]::-webkit-inner-spin-button {
+  position: relative;
+  margin-right: -8px; /* Elmozdítja a nyilakat */
+}
+
+.notlogged {
+  color: rgb(33, 37, 41);
+  margin-left: 40px;
+  font-weight: normal;
+}
+
+.del {
+  width: 104px;
+}
+
+.sbm {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}

@@ -1,0 +1,11 @@
+Felhasznalo (fid, név, email, jelszo, milyen_szid) 
+
+Szerep (szid, szerep_nev)
+
+Allomas (aid, nev, varos) 
+
+Jarat (jaid, tipus, indulo_aid, cel_aid, datum, idopont) 
+
+Jegy (jeid, melyik_jaid, ar, elerhetodb)
+
+VasaroltJegyek (vid, tulajdonos_fid, melyik_jaid, darab)

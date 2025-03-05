@@ -1,0 +1,1 @@
+Megnyitáshoz a php-n belüli homepg.php nyissa meg, vam néven importálja az adatbázist. 

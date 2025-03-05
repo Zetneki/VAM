@@ -1,0 +1,53 @@
+-- Szerep tábla
+CREATE TABLE Szerep (
+    szid INT AUTO_INCREMENT PRIMARY KEY,
+    szerep_nev VARCHAR(50) NOT NULL
+);
+
+-- Felhasznalo tábla
+CREATE TABLE Felhasznalo (
+    email VARCHAR(100) PRIMARY KEY,
+    nev VARCHAR(100) NOT NULL,
+    jelszo VARCHAR(255) NOT NULL,
+    milyen_szid INT,
+    FOREIGN KEY (milyen_szid) REFERENCES Szerep(szid)
+);
+
+-- Allomas tábla
+CREATE TABLE Allomas (
+    aid INT AUTO_INCREMENT PRIMARY KEY,
+    nev VARCHAR(100) NOT NULL,
+    varos VARCHAR(100) NOT NULL,
+    UNIQUE KEY (nev, varos)
+);
+
+-- Jarat tábla
+CREATE TABLE Jarat (
+    jaid INT AUTO_INCREMENT PRIMARY KEY,
+    tipus ENUM('busz', 'vonat', 'repülő') NOT NULL,
+    indulo_aid INT,
+    cel_aid INT,
+    datum DATE NOT NULL,
+    idopont TIME NOT NULL,
+    FOREIGN KEY (indulo_aid) REFERENCES Allomas(aid),
+    FOREIGN KEY (cel_aid) REFERENCES Allomas(aid)
+);
+
+-- Jegy tábla
+CREATE TABLE Jegy (
+    jeid INT AUTO_INCREMENT PRIMARY KEY,
+    melyik_jaid INT,
+    ar INT NOT NULL,
+    elerhetodb INT NOT NULL,
+    FOREIGN KEY (melyik_jaid) REFERENCES Jarat(jaid)
+);
+
+-- VasaroltJegyek tábla
+CREATE TABLE VasaroltJegyek (
+    vid INT AUTO_INCREMENT PRIMARY KEY,
+    tulajdonos_email VARCHAR(100) ON UPDATE CASCADE,
+    melyik_jaid INT,
+    darab INT NOT NULL,
+    FOREIGN KEY (tulajdonos_email) REFERENCES Felhasznalo(email),
+    FOREIGN KEY (melyik_jaid) REFERENCES Jarat(jaid)
+);

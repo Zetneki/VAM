@@ -1,0 +1,71 @@
+body {
+  background-image: url(../img/background3_enhanced.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cell {
+  border-right: 1px rgb(222, 226, 230) solid;
+}
+
+.cell,
+.cellr {
+  text-align: center;
+}
+
+.cont {
+  opacity: 0.9;
+}
+
+.tbl {
+  margin: 20px 0;
+  border-collapse: collapse;
+  border-radius: 10px; /* Táblázat sarkainak lekerekítése */
+  overflow: hidden; /* A kerekített sarkok miatt szükséges */
+  border: solid white 2px;
+}
+
+table {
+  width: 100%;
+}
+
+.table-head-title {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.table-title {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-left: 1%;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgb(178, 190, 195);
+}
+
+th {
+  background-color: rgb(66, 79, 97);
+  color: rgb(236, 240, 241);
+}
+
+td {
+  background-color: rgb(47, 62, 80);
+  color: rgb(236, 240, 241);
+}
+
+tr:hover {
+  background-color: rgb(241, 196, 15);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(58, 72, 90);
+}

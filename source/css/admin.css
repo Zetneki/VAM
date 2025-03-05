@@ -1,0 +1,20 @@
+body {
+  background-image: url(../img/background3_enhanced.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cont {
+  opacity: 0.9;
+}
+
+.title {
+  color: white;
+  text-align: left;
+}
+
+.sbm {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}

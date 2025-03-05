@@ -1,0 +1,149 @@
+body {
+  background-color: rgb(34, 47, 62);
+  color: rgb(236, 240, 241);
+  display: flex;
+  flex-direction: column;
+}
+
+.bxs-user-circle {
+  color: rgb(255, 159, 67);
+  font-size: 50px;
+}
+
+.navbar {
+  background-color: rgb(66, 79, 97);
+  box-shadow: 0px 5px 3px -2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand,
+.nav-link {
+  color: rgb(236, 240, 241);
+}
+
+.nav-link:hover {
+  color: rgb(241, 196, 15);
+}
+
+.btn-primary {
+  background-color: rgb(255, 159, 67);
+  border: none;
+  color: rgb(34, 47, 62);
+}
+
+.btn-primary:hover {
+  background-color: rgb(241, 196, 15);
+  color: rgb(34, 47, 62);
+}
+
+.btn-primary:active {
+  background-color: rgb(168, 89, 16) !important;
+}
+
+.modal-content {
+  background-color: rgb(66, 79, 97) !important;
+  color: rgb(236, 240, 241);
+}
+
+.modal-header,
+.modal-footer {
+  border-color: rgb(178, 190, 195);
+}
+
+.left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-cover {
+  width: 200px;
+}
+
+.search {
+  background-color: rgb(255, 159, 67);
+  border: none;
+  color: rgb(34, 47, 62);
+}
+
+.search:hover {
+  background-color: rgb(241, 196, 15);
+  color: rgb(34, 47, 62);
+}
+
+.search:active {
+  background-color: rgb(168, 89, 16) !important;
+}
+
+.modal-title {
+  color: rgb(236, 240, 241);
+}
+
+a {
+  color: rgb(236, 240, 241) !important;
+}
+
+.nav-link {
+  color: rgb(236, 240, 241) !important;
+}
+
+.image-cover {
+  width: 150px;
+  height: 150px;
+}
+
+.main {
+  background-color: antiquewhite;
+  color: black;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.text {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.context {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-weight: normal;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.vam {
+  flex-direction: row;
+  justify-content: end;
+  align-self: center;
+}
+
+.logo {
+  flex-direction: row;
+  align-self: center;
+}
+
+.logopic {
+  width: 150px;
+}
+
+footer {
+  background-color: rgb(66, 79, 97);
+  color: rgb(236, 240, 241);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 2%;
+}

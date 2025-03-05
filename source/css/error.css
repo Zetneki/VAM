@@ -1,0 +1,29 @@
+.toast {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  background-color: rgb(167, 15, 15);
+  color: white;
+}
+
+.toast-header {
+  background-color: rgb(202, 39, 39);
+}
+
+.rounded {
+  width: 20px;
+}
+
+.errt,
+.err {
+  font-weight: bold;
+}
+
+.errt {
+  font-size: 22px;
+  color: white;
+}
+
+.err {
+  font-size: 20px;
+}
